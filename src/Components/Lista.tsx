@@ -1,10 +1,11 @@
 import { title } from 'process';
 import React from 'react'
 import { ListaTodo } from '../Models/ListaTodo';
+import ListaItem from './ListaItem';
 
 const Lista = () => {
     const listaTodo: ListaTodo[] = [
-        { id: 1, title: 'Ir ao supermercado', done: false },
+        { id: 1, title: 'Ir ao supermercado', done: true },
         { id: 2, title: 'Ir a academia', done: false }
     ];
 
@@ -21,7 +22,7 @@ const Lista = () => {
             <tbody>
                 {
                     listaTodo?.map(
-                        listaTodo => (<div key={listaTodo.id}>{listaTodo.title}</div>)
+                        listaTodo => (<ListaItem key={listaTodo.id} lista={listaTodo}></ListaItem>)
                     )
                 }
             </tbody>
