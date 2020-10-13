@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ListaTodoContext } from '../Contexts/ListaTodoContext';
+import { ListaTodoContextType } from '../Contexts/ListaTodoContextType';
 import { ListaTodo } from '../Models/ListaTodo';
+
 
 interface TodoListItemProps { lista: ListaTodo }
 
 const ListaItem = (props: TodoListItemProps) => {
 
+    const { removeTodo, toggle } = useContext<ListaTodoContextType>(ListaTodoContext);
+
     const handleChange = () => {
-        console.log('Mudou');
+        toggle(props.lista);
     }
 
     const onRemove = (tarefa: ListaTodo) => {
-        console.log(tarefa);
+        removeTodo(tarefa);
     }
 
     return (
