@@ -46,13 +46,11 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## Used NPM's
 
 npx create-react-app todo --template typescript
-
 npm install react-router-dom @types/react-router-dom
-
 npm install react-hook-form yup @types/yup @hookform/resolvers
 
 ## Visual Aspect
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>
+https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css
+https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js
+https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js
