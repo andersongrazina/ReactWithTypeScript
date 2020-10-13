@@ -1,13 +1,11 @@
 import { title } from 'process';
-import React from 'react'
-import { ListaTodo } from '../Models/ListaTodo';
+import React, { useContext } from 'react'
+import { ListaTodoContext } from '../Contexts/ListaTodoContext';
+import { ListaTodoContextType } from '../Contexts/ListaTodoContextType';
 import ListaItem from './ListaItem';
 
 const Lista = () => {
-    const listaTodo: ListaTodo[] = [
-        { id: 1, title: 'Ir ao supermercado', done: true },
-        { id: 2, title: 'Ir a academia', done: false }
-    ];
+    const { todos } = useContext<ListaTodoContextType>(ListaTodoContext);
 
     return (
         <table className="uk-table">
@@ -21,7 +19,7 @@ const Lista = () => {
             </thead>
             <tbody>
                 {
-                    listaTodo?.map(
+                    todos?.map(
                         listaTodo => (<ListaItem key={listaTodo.id} lista={listaTodo}></ListaItem>)
                     )
                 }

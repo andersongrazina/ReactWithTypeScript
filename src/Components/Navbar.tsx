@@ -5,12 +5,12 @@ const Navbar = () => {
         <div className="uk-container">
             <nav className="uk-navbar">
                 <div className="uk-navbar-left">
-                    <a href="#" className="uk-navbar-item uk-logo">Minha Lista de Tarefas</a>
+                    <a href="/" className="uk-navbar-item uk-logo">Minha Lista de Tarefas</a>
                 </div>
                 <div className="uk-navbar-right">
                     <ul className="uk-navbar-nav">
                         <li>
-                            <a href="#">
+                            <a href="/create">
                                 <span uk-icon="icon: plus; ratio: 1.2"></span>
                             </a>
                         </li>
